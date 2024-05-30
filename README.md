@@ -15,5 +15,3 @@ When you are submitting a review make sure the course number is a valid number, 
 
 If you navigate to the info tab you will see each member of the group and a short description of each member.
 
-== Instruction ==
-To run the website open the index.html file
