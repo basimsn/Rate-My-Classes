@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UIC CS CLASS SEARCH</title>
+
+    <!-- <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+
+    <link rel="sylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAKLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" />
+
+    <link rel="stylesheet" href="style.css"/>
+
+    <script src="https://kit.fontawesome.com/e12bbd4383.js" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+    
+
+    
+</head>
+
+<header class="fixed-header">
+    <div class="mainHeader">
+        <a href="index.html">
+            <img src="../assets/hackhives.png" alt="logo" class="logo">
+        </a>
+        <nav>
+            <a href="index.html"><img src=""></a>
+                <ul class="nav-links-header" id="navLinks"> 
+                    <li><a href="#">100 Level </a>
+                        <ul class="dropdown">
+                                <li><a href="course.html?class=107";>CS: 107</a></li>
+                                <li><a href="course.html?class=109">CS: 109</a></li>
+                                <li><a href="course.html?class=111">CS: 111</a></li>
+                                <li><a href="course.html?class=141">CS: 141</a></li>
+                                <li><a href="course.html?class=151">CS: 151</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">200 Level </a>
+                        <ul class="dropdown">
+                                <li><a href="course.html?class=211">CS: 211</a></li>
+                                <li><a href="course.html?class=251">CS: 251</a></li>
+                                <li><a href="course.html?class=261">CS: 261</a></li>
+                                <li><a href="course.html?class=294">CS: 294</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">300 Level </a>
+                        <ul class="dropdown">
+                                <li><a href="course.html?class=301">CS: 301</a></li>
+                                <li><a href="course.html?class=341">CS: 341</a></li>
+                                <li><a href="course.html?class=342">CS: 342</a></li>
+                                <li><a href="course.html?class=351">CS: 351</a></li>
+                                <li><a href="course.html?class=361">CS: 361</a></li>
+                                <li><a href="course.html?class=362">CS: 362</a></li>
+                                <li><a href="course.html?class=377">CS: 377</a></li>
+                                <li><a href="course.html?class=394">CS: 394</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">400 Level </a>
+                        <ul class="dropdown">
+                                <li><a href="course.html?class=401">CS: 401</a></li>
+                                <li><a href="course.html?class=407">CS: 407</a></li>
+                                <li><a href="course.html?class=411">CS: 411</a></li>
+                                <li><a href="course.html?class=412">CS: 412</a></li>
+                                <li><a href="course.html?class=418">CS: 418</a></li>
+                                <li><a href="course.html?class=422">CS: 422</a></li>
+                                <li><a href="course.html?class=425">CS: 425</a></li>
+                                <li><a href="course.html?class=427">CS: 427</a></li>
+                                <li><a href="course.html?class=440">CS: 440</a></li>
+                                <li><a href="course.html?class=442">CS: 442</a></li>
+                                <li><a href="course.html?class=450">CS: 450</a></li>
+                                <li><a href="course.html?class=454">CS: 454</a></li>
+                                <li><a href="course.html?class=461">CS: 461</a></li>
+                                <li><a href="course.html?class=466">CS: 466</a></li>
+                                <li><a href="course.html?class=474">CS: 474</a></li>
+                                <li><a href="course.html?class=477">CS: 477</a></li>
+                                <li><a href="course.html?class=478">CS: 478</a></li>
+                                <li><a href="course.html?class=479">CS: 479</a></li>
+                                <li><a href="course.html?class=480">CS: 480</a></li>
+                                <li><a href="course.html?class=483">CS: 483</a></li>
+                                <li><a href="course.html?class=491">CS: 491</a></li>
+                                <li><a href="course.html?class=494">CS: 494</a></li>
+                                <li><a href="course.html?class=499">CS: 499</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="info.html">INFO</a></li>
+                </ul>
+                <script src = "classes.js"></script>
+            <script>
+                const queryString2 = window.location.search;
+                const urlParams2 = new URLSearchParams(queryString);
+                const classValue2 = urlParams.get('class');
+
+                updateFrame(classValue2);
+              </script>
+        </nav>
+    </div>
+    
+    <div class="BlueBarHeader">
+        <h2>Computer Science Class Search</h1>
+        <h4>at the University of Illinois At Chicago</h3>
+    </div>
+</header>
+
+<body class="main">
+    <div class="search-bar-div">
+        <div class="searchInput">
+                <form action="course.html" method="get" id="search-form">
+                    <input type="text" placeholder="Search for a Computer Science class...">
+                        <div class="resultBox"></div>
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                </form>
+          </div>
+    </div>
+    <script src="search.js"></script>
+    <section class="class-section1" class="course-grid-item">
+        <div id = "courseNumber"></div>
+            <script src = "classes.js"></script>
+            <script>
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                const classValue = urlParams.get('class');
+                console.log(typeof classValue);
+                updateFrame(classValue);
+            </script>
+    </section>
+    <div class="graph__container">
+        <div class="graph">
+        <div>
+        <span class="label">Overall Rating:</span>
+        <div class="bar bar1"></div>
+        </div>
+        <div>
+        <span class="label">Difficulty:</span>
+        <div class="bar bar2"></div>
+        </div>
+        <div>
+        <span class="label">Course Load:</span>
+        <div class="bar bar3"></div>
+        </div>
+        <script>
+            updateFrame(classValue);
+           
+        </script>
+       <form class="review">
+        <label for="rating">Rating:</label>
+        <input type="text" id="rating" name="rating" min="0" max="5"> 
+      
+        <label for="difficulty">Difficulty:</label>
+        <input type="text" id="difficulty" name="difficulty" min="0" max="5">
+      
+        <label for="cload">Course Load:</label>
+        <input type="text" id="cload" name="cload" min="0" max="5">
+      
+        <button type="button" id="submit">Submit</button>
+      </form>
+      
+
+      <script>
+        var totalRating = 0;
+        var totalDifficulty = 0;
+        var totalCload = 0;
+        var numCourses = 0;
+      
+        function updateGraph() {
+  // Get the input values
+  var rating = parseFloat(document.getElementById("rating").value);
+
+  var difficulty = parseFloat(document.getElementById("difficulty").value);
+
+  var cload = parseFloat(document.getElementById("cload").value);
+  
+  if (rating > 5 || difficulty > 5 || cload > 5) {
+        alert("Please enter values between 0 and 5.");
+        return;
+  }
+
+  // Calculate the averages
+  var avgRating = (totalRating + rating) / (numCourses + 1);
+  var avgDifficulty = (totalDifficulty + difficulty) / (numCourses + 1);
+  var avgCload = (totalCload + cload) / (numCourses + 1);
+
+  // Update the bars
+  var bar1 = document.querySelector(".bar1");
+  var bar2 = document.querySelector(".bar2");
+  var bar3 = document.querySelector(".bar3");
+
+  bar1.style.setProperty('--overall-rating',avgRating );
+  bar2.style.setProperty('--difficulty',avgDifficulty );
+  bar3.style.setProperty('--course-load',avgCload );
+  bar2.style.width = '300px';
+  bar3.style.width = '300px';
+  bar1.style.width = '300px';
+
+  // Update the total and count variables
+  totalRating += rating;
+  totalDifficulty += difficulty;
+  totalCload += cload;
+  numCourses++;
+
+  // Clear the input fields
+  document.getElementById("rating").value = "";
+  document.getElementById("difficulty").value = "";
+  document.getElementById("cload").value = "";
+}
+      
+        document.getElementById("submit").addEventListener("click", function() {
+          updateGraph();
+        });
+      </script>
+    </div>
+    </div>
+</body>
+
+<footer>
+    <a href="#" class="footer__logo">UIC CS Class Search</a>
+
+    <ul class="permalinks">
+        <a href="#">100 Level</a>
+        <a href="#">200 Level</a>
+        <a href="#">300 Level</a>
+        <a href="#">400 Level</a>
+        <a href="INFO">INFO</a>
+    </ul>
+
+    <div class="footer__copyright">
+        <small>&copy; Hack Hives. All Rights Reserved</small>
+    </div>
+</footer>
+
+</html>

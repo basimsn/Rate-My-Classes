@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UIC CS CLASS SEARCH</title>
+
+    <!-- <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+
+    <link rel="sylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAKLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/e12bbd4383.js" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+</head>
+
+<header class="fixed-header">
+    <div class="mainHeader">
+        <a href="index.html">
+            <img src="../assets/hackhives.png" alt="logo" class="logo">
+        </a>
+        <nav>
+            <a href="index.html"><img src=""></a>
+                <ul class="nav-links-header" id="navLinks"> 
+                    <li><a href="#">100 Level </a>
+                        <ul class="dropdown">
+                                <li><a href="course.html?class=107";>CS: 107</a></li>
+                                <li><a href="course.html?class=109">CS: 109</a></li>
+                                <li><a href="course.html?class=111">CS: 111</a></li>
+                                <li><a href="course.html?class=141">CS: 141</a></li>
+                                <li><a href="course.html?class=151">CS: 151</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">200 Level </a>
+                        <ul class="dropdown">
+                                <li><a href="course.html?class=211">CS: 211</a></li>
+                                <li><a href="course.html?class=251">CS: 251</a></li>
+                                <li><a href="course.html?class=261">CS: 261</a></li>
+                                <li><a href="course.html?class=294">CS: 294</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">300 Level </a>
+                        <ul class="dropdown">
+                                <li><a href="course.html?class=301">CS: 301</a></li>
+                                <li><a href="course.html?class=341">CS: 341</a></li>
+                                <li><a href="course.html?class=342">CS: 342</a></li>
+                                <li><a href="course.html?class=351">CS: 351</a></li>
+                                <li><a href="course.html?class=361">CS: 361</a></li>
+                                <li><a href="course.html?class=362">CS: 362</a></li>
+                                <li><a href="course.html?class=377">CS: 377</a></li>
+                                <li><a href="course.html?class=394">CS: 394</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">400 Level </a>
+                        <ul class="dropdown">
+                                <li><a href="course.html?class=401">CS: 401</a></li>
+                                <li><a href="course.html?class=407">CS: 407</a></li>
+                                <li><a href="course.html?class=411">CS: 411</a></li>
+                                <li><a href="course.html?class=412">CS: 412</a></li>
+                                <li><a href="course.html?class=418">CS: 418</a></li>
+                                <li><a href="course.html?class=422">CS: 422</a></li>
+                                <li><a href="course.html?class=425">CS: 425</a></li>
+                                <li><a href="course.html?class=427">CS: 427</a></li>
+                                <li><a href="course.html?class=440">CS: 440</a></li>
+                                <li><a href="course.html?class=442">CS: 442</a></li>
+                                <li><a href="course.html?class=450">CS: 450</a></li>
+                                <li><a href="course.html?class=454">CS: 454</a></li>
+                                <li><a href="course.html?class=461">CS: 461</a></li>
+                                <li><a href="course.html?class=466">CS: 466</a></li>
+                                <li><a href="course.html?class=474">CS: 474</a></li>
+                                <li><a href="course.html?class=477">CS: 477</a></li>
+                                <li><a href="course.html?class=478">CS: 478</a></li>
+                                <li><a href="course.html?class=479">CS: 479</a></li>
+                                <li><a href="course.html?class=480">CS: 480</a></li>
+                                <li><a href="course.html?class=483">CS: 483</a></li>
+                                <li><a href="course.html?class=491">CS: 491</a></li>
+                                <li><a href="course.html?class=494">CS: 494</a></li>
+                                <li><a href="course.html?class=499">CS: 499</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="info.html">INFO</a></li>
+                </ul>
+                <script src = "classes.js"></script>
+            <script>
+                const queryString2 = window.location.search;
+                const urlParams2 = new URLSearchParams(queryString);
+                const classValue2 = urlParams.get('class');
+
+                updateFrame(classValue2);
+              </script>
+        </nav>
+    </div>
+    
+    <div class="BlueBarHeader">
+        <h2>Computer Science Class Search</h1>
+        <h4>at the University of Illinois At Chicago</h3>
+    </div>
+</header>
+
+<body>
+    <section class="lowerHeader">
+        <div class="CodingPicture">
+            <img src="../assets/header-img2.jpg" alt="logo">
+        </div>
+
+        <div class="BlueHeader-Links">
+            <button class="buttonlinks">
+            <i class="fa-solid fa-list-ul" style="color: #f6f6f6;" href="https://catalog.uic.edu/ucat/course-descriptions/cs/"></i>
+            <a href="https://catalog.uic.edu/ucat/course-descriptions/cs/">Undergraduate Class List</a>
+            </button>
+            <button class="buttonlinks">
+            <i class="fa-solid fa-list-ul" style="color: #f6f6f6;" href="https://catalog.uic.edu/ucat/course-descriptions/cs/"></i>
+            <a href="https://catalog.uic.edu/ucat/colleges-depts/engineering/cs/bs-cs/">Four Year Plan</a>
+            </button>
+        </div>
+    </section>
+
+    <section class="search-description">
+        <p>
+            Still deciding on what Computer Science classes to take for next semester... Seach for the class through the course number below for a rating out of 5 stars, a short description and professors you can take the class with!
+        </p>
+    </section>
+
+    <div class="search-bar-div">
+        <div class="searchInput">
+                <form action="course.html" method="get" id="search-form">
+                    <input type="text" placeholder="Search for a Computer Science class...">
+                        <div class="resultBox"></div>
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                </form>
+          </div>
+    </div>
+    <script src="search.js"></script>
+</body>
+
+<footer>
+    <a href="#" class="footer__logo">UIC CS Class Search</a>
+
+    <ul class="permalinks">
+        <a href="#">100 Level </a>
+        <a href="#">200 Level </a>
+        <a href="#">300 Level </a>
+        <a href="#">400 Level </a>
+        <a href="INFO">INFO </a>
+    </ul>
+
+    <div class="footer__copyright">
+        <small>&copy; Hack Hives. All Rights Reserved</small>
+    </div>
+    <a href="index.html">
+        <img src="../assets/hackhives-circle.png" alt="logo" class="footer-logo-img">
+    </a>
+</footer>
+
+</html>
+
+
+
+
+
